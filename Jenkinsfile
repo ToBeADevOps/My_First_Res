@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        withMaven(publisherStrategy: 'IMPLICIT', globalMavenSettingsConfig: 'C:\\Program Files\\apache-maven-3.6.3\\conf\\settings.xml', globalMavenSettingsFilePath: 'C:\\Program Files\\apache-maven-3.6.3')
+        withMaven(publisherStrategy: 'IMPLICIT', globalMavenSettingsFilePath: 'C:\\Program Files\\apache-maven-3.6.3', mavenSettingsFilePath: 'C:\\Program Files\\apache-maven-3.6.3\\conf\\settings.xml')
       }
     }
 
