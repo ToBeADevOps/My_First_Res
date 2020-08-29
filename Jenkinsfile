@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('SVN Checkout') {
       steps {
-        bat 'bat C:\\Users\\hell\\Desktop\\Project\\BAT\\checkout.bat'
+        bat 'C:\\Users\\hell\\Desktop\\Project\\BAT\\checkout.bat'
       }
     }
 
